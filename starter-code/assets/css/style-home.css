@@ -1,0 +1,145 @@
+body{
+    background-image: url(../img/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+main.container .left-beginning h5.title-beginning{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--subheading-1);
+    letter-spacing: 4.72px;
+    color: var(--violet);
+}
+
+main.container .left-beginning h1.title-space{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+main.container .left-beginning p.beginning-description{
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--body-text);
+    color: var(--violet);
+    line-height: 32px;
+}
+
+main.container .right-beginning{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+main.container .right-beginning button.landing-page-button{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--black);
+    background-color: var(--white);
+    border: none;
+    border-radius: 200px;
+    width: 274px;
+    height: 274px;
+    outline: 0px solid var(--white-hover-button);
+    transition: all 0.3s ease-in-out;
+}
+
+main.container .right-beginning button.landing-page-button:hover{
+    outline: 50px solid var(--white-hover-button);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(../img/home/background-home-tablet.jpg);
+    }
+
+    main.container{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-top: 100px;
+        height: 100vh;
+    }
+
+    main.container .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 120px;
+    }
+
+    main.container .left-beginning{
+        text-align: center;
+    }
+
+    main.container .left-beginning h5.title-beginning{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        color: var(--violet);
+    }
+
+    main.container .left-beginning p.beginning-description{
+        max-width: 450px;
+    }
+
+    main.container .right-beginning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main.container .right-beginning button.landing-page-button{
+        width: 242px;
+        height: 242px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    body{
+        background-image: url(../img/home/background-home-mobile.jpg);
+    }
+
+    main.container{
+        margin-top: 120px;
+    }
+
+    main.container .row{
+        gap: 50px;
+    }
+
+    main.container .left-beginning h5.title-beginning{
+        font-size: 16px;
+        letter-spacing: 3.38px;
+        color: var(--violet);
+    }
+
+    main.container .left-beginning h1.title-space{
+        font-size: 80px;
+    }
+
+    main.container .left-beginning p.beginning-description{
+        font-size: 15px;
+        max-width: 327px;
+    }
+
+    main.container .right-beginning button.landing-page-button{
+        width: 150px;
+        height: 150px;
+    }
+
+    main.container .right-beginning button.landing-page-button{
+        font-size: 20px;
+        letter-spacing: 1.25px;
+    }
+}
