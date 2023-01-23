@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-destination.css">
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/img/shared/logo.svg" alt="logo">
+        </div>
+
+        <ul class="main-navbar">
+            <li><a href="index.html"><span class="number">00</span> Home</a></li>
+            <li><a class="item-active" href="destination.html"><span class="number">01</span> Destination</a></li>
+            <li><a href="crew.html"><span class="number">02</span> Crew</a></li>
+            <li><a href="technology.html"><span class="number">03</span> Technology</a></li>
+        </ul>
+
+        <!-- add hamburger icon svg for mobile -->
+        <div id="icon-nav" onclick="changeImage()">
+            <div class="hamburger">
+                <img id="hamburger" src="./assets/img/shared/icon-hamburger.svg" alt="hamburger">
+            </div>
+            <div class="close">
+                <img id="close" src="./assets/img/shared/icon-close.svg" alt="close">
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="subheading1-title"><span>01</span> Pick Your Destination</h6>
+            </div>
+            <div class="col-lg-6 col-md-12 planet-image">
+                <div class="tab-content" id="myTabContent">
+                    <div id="tab-content">
+                        <div class="tab-data tab-data-img" data-tab="1">
+                            <img src="./assets/img/destination/image-moon.webp" alt="Moon">
+                        </div>
+                        <div class="tab-data tab-data-img" data-tab="2">
+                            <img src="./assets/img/destination/image-mars.webp" alt="Mars">
+                        </div>
+                        <div class="tab-data tab-data-img" data-tab="3">
+                            <img src="./assets/img/destination/image-europa.webp" alt="Europa">
+                        </div>
+                        <div class="tab-data tab-data-img" data-tab="4">
+                            <img src="./assets/img/destination/image-titan.webp" alt="Titan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 all-planets">
+                <div id="tabs">
+                    <div class="tab" data-tab="1">Moon</div>
+                    <div class="tab" data-tab="2">Mars</div>
+                    <div class="tab" data-tab="3">Europa</div>
+                    <div class="tab" data-tab="4">Titan</div>
+                </div>
+
+                <div id="tab-content">
+                    <div class="tab-data tab-data-desc" data-tab="1">
+                        <h2 class="planet-name">Moon</h2>
+
+                        <p class="planet-desc">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+                        <div class="row planet-details">
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Avg. distance</p>
+                                <h6 class="subheading1-planet">384,400 km</h6>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Est. travel time</p>
+                                <h6 class="subheading1-planet">3 days</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-data tab-data-desc" data-tab="2">
+                        <h2 class="planet-name">Mars</h2>
+
+                        <p class="planet-desc">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+                            the tallest planetary mountain in our solar system. It’s two and a half times 
+                            the size of Everest!</p>
+
+                        <div class="row planet-details">
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Avg. distance</p>
+                                <h6 class="subheading1-planet">225 mil. km</h6>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Est. travel time</p>
+                                <h6 class="subheading1-planet">9 months</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-data tab-data-desc" data-tab="3">
+                        <h2 class="planet-name">Europa</h2>
+
+                        <p class="planet-desc">The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+                            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+                            ice skating, curling, hockey, or simple relaxation in your snug 
+                            wintery cabin.</p>
+
+                        <div class="row planet-details">
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Avg. distance</p>
+                                <h6 class="subheading1-planet">628 mil. km</h6>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Est. travel time</p>
+                                <h6 class="subheading1-planet">3 years</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-data tab-data-desc" data-tab="4">
+                        <h2 class="planet-name">Titan</h2>
+
+                        <p class="planet-desc">The only moon known to have a dense atmosphere other than Earth, Titan 
+                            is a home away from home (just a few hundred degrees colder!). As a 
+                            bonus, you get striking views of the Rings of Saturn.</p>
+
+                        <div class="row planet-details">
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Avg. distance</p>
+                                <h6 class="subheading1-planet">1.6 bil. km</h6>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <p class="subheading2">Est. travel time</p>
+                                <h6 class="subheading1-planet">7 years</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
