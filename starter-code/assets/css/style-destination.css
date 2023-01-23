@@ -9,6 +9,7 @@ body{
 main.container{
     display: flex;
     height: 100%;
+    padding-top: 75px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -119,11 +120,9 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
     }
 
     main.container{
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        margin-top: 100px;
-        height: 100vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
     }
 
     main.container h6.subheading1-title{
@@ -153,13 +152,13 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 376px) {
     body{
         background-image: url(../img/destination/background-destination-mobile.jpg);
     }
 
     main.container{
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     main.container .row{
