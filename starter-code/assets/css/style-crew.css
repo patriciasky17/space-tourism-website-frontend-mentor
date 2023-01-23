@@ -14,7 +14,7 @@ main.container{
     padding-right: 5%;
 }
 
-main.container .planet-image{
+main.container .crew-image{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -41,7 +41,7 @@ main.container h4.role-name{
     color: var(--white-hover);
 }
 
-main.container h3.planet-name{
+main.container h3.crew-name{
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     color: var(--white);
@@ -60,11 +60,11 @@ main.container .tab-data {
     display: none;
 }
 
-main.container .all-planets {
+main.container .all-crews {
     margin-top: 50px;
 }
 
-main.container .all-planets #tabs {
+main.container .all-crews #tabs {
     font-size: var(--nav-text);
     letter-spacing: var(--letterspace-nav-text);
     text-transform: uppercase;
@@ -75,7 +75,7 @@ main.container .all-planets #tabs {
     margin-top: 15%;
 }
 
-main.container .all-planets #tabs .tab{
+main.container .all-crews #tabs .tab{
     text-decoration: none;
     background-color: var(--white-hover-button);
     transition: all 0.3s ease-in-out;
@@ -84,46 +84,25 @@ main.container .all-planets #tabs .tab{
     border-radius: 50%;
 }
 
-main.container .all-planets #tabs .tab:hover{
+main.container .all-crews #tabs .tab:hover{
     border-bottom: 3px solid var(--white-hover);
     transition: all 0.3s ease-in-out;
 }
 
-main.container .all-planets #tabs .tab.active{
+main.container .all-crews #tabs .tab.active{
     text-decoration: none;
     color: var(--white);
     background-color: var(--white);
     transition: all 0.3s ease-in-out;
 }
 
-main.container .tab-data-desc p.planet-desc{
+main.container .tab-data-desc p.crew-desc{
     font-family: 'Barlow', sans-serif;
     font-size: var(--body-text);
     line-height: 32px;
     color: var(--violet);
     margin-bottom: 32px;
     max-width: 444px;
-}
-
-main.container #tab-content .tab-data-desc .planet-details{
-    border-top: 1px solid #383B4B;
-    padding: 14px 0;
-}
-
-main.container #tab-content .tab-data-desc .planet-details p.subheading2{
-    color: var(--violet);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: var(--subheading-2);
-    text-transform: uppercase;
-    letter-spacing: var(--letterspace-subheading-2);
-}
-
-main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet{
-    font-family: 'Bellefair', serif;
-    text-transform: uppercase;
-    font-size: var(--subheading-1);
-    color: var(--white);
-    padding-bottom: 50px;
 }
 
 
@@ -137,7 +116,7 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
         width: 100%;
     }
 
-    main.container .all-planets{
+    main.container .all-crews{
         margin-top: 20px;
     }
 
@@ -154,18 +133,18 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
         font-size: 24px;
     }
 
-    main.container h3.planet-name{
+    main.container h3.crew-name{
         font-size: 40px;
     }
 
-    main.container .all-planets #tabs{
+    main.container .all-crews #tabs{
         margin-top: 50px;
         justify-content: center;
         align-items: center;
         gap: 16px;
     }
 
-    main.container .all-planets #tabs .tab{
+    main.container .all-crews #tabs .tab{
         width: 10px;
         height: 10px;
     }
@@ -174,7 +153,7 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
         text-align: center;
     }
 
-    main.container .tab-data-desc p.planet-desc{
+    main.container .tab-data-desc p.crew-desc{
         font-family: 'Barlow', sans-serif;
         font-size: 16px;
         line-height: 32px;
@@ -207,7 +186,7 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
     }
 
 
-    main.container .all-planets #tabs{
+    main.container .all-crews #tabs{
         font-size: 14px;
         margin-top: 0px;
     }
@@ -222,7 +201,7 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
         margin-top: 0px;
     }
 
-    main.container .all-planets #tabs .tab{
+    main.container .all-crews #tabs .tab{
         margin-bottom: 20px;
     }
 
@@ -233,15 +212,11 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
         letter-spacing: var(--letterspace-nav-text);
     }
 
-    main.container h2.planet-name{
+    main.container h2.crew-name{
         font-size: 56px;
     }
 
-    main.container .tab-data-desc p.planet-desc{
+    main.container .tab-data-desc p.crew-desc{
         font-size: 15px;
-    }
-
-    main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet{
-        padding-bottom: 0px;
     }
 }
