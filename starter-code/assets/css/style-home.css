@@ -54,6 +54,11 @@ main.container .right-beginning button.landing-page-button{
     transition: all 0.3s ease-in-out;
 }
 
+main.container .right-beginning button.landing-page-button a.link-to-destination-page{
+    text-decoration: none;
+    color: var(--black);
+}
+
 main.container .right-beginning button.landing-page-button:hover{
     outline: 50px solid var(--white-hover-button);
     transition: all 0.3s ease-in-out;
