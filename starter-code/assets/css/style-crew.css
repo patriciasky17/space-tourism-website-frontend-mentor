@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/destination/background-destination-desktop.jpg);
+    background-image: url(../img/crew/background-crew-desktop.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ main.container{
 
 main.container .planet-image{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -35,16 +35,33 @@ main.container h6.subheading1-title span{
     padding-right: 10px;
 }
 
-main.container .all-planets{
-    padding-left: 8%;
+main.container h4.role-name{
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    color: var(--white-hover);
 }
 
-main.container .tab-data-img {
+main.container h3.planet-name{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+main.container #tab-content .tab-data.tab-data-img {
     text-align: center;
+}
+
+main.container #tab-content .tab-data.tab-data-img img{
+    width: 100%;
+    margin-top: -20%;
 }
 
 main.container .tab-data {
     display: none;
+}
+
+main.container .all-planets {
+    margin-top: 50px;
 }
 
 main.container .all-planets #tabs {
@@ -53,17 +70,18 @@ main.container .all-planets #tabs {
     text-transform: uppercase;
     font-family: "Barlow Condensed", sans-serif;
     display: flex;
-    gap: 35px;
+    gap: 24px;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-top: 15%;
 }
 
 main.container .all-planets #tabs .tab{
     text-decoration: none;
-    color: var(--violet);
-    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    background-color: var(--white-hover-button);
     transition: all 0.3s ease-in-out;
-    padding: 0 0 6px 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
 }
 
 main.container .all-planets #tabs .tab:hover{
@@ -74,14 +92,8 @@ main.container .all-planets #tabs .tab:hover{
 main.container .all-planets #tabs .tab.active{
     text-decoration: none;
     color: var(--white);
-    border-bottom: 3px solid var(--white);
+    background-color: var(--white);
     transition: all 0.3s ease-in-out;
-}
-
-main.container h2.planet-name{
-    font-family: 'Bellefair', serif;
-    text-transform: uppercase;
-    color: var(--white);
 }
 
 main.container .tab-data-desc p.planet-desc{
@@ -90,6 +102,7 @@ main.container .tab-data-desc p.planet-desc{
     line-height: 32px;
     color: var(--violet);
     margin-bottom: 32px;
+    max-width: 444px;
 }
 
 main.container #tab-content .tab-data-desc .planet-details{
@@ -114,33 +127,47 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     body{
-        background-image: url(../img/destination/background-destination-tablet.jpg);
+        background-image: url(../img/crew/background-crew-tablet.jpg);
     }
 
     main.container{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top: 40px;
         width: 100%;
+    }
+
+    main.container .all-planets{
+        margin-top: 20px;
     }
 
     main.container h6.subheading1-title{
         font-size: 20px;
     }
 
-    main.container .tab-data-img img{
+    main.container #tab-content .tab-data.tab-data-img img {
         width: 90%;
+        margin-top: 40px;
     }
 
-    main.container h2.planet-name{
-        font-size: 80px;
+    main.container h4.role-name{
+        font-size: 24px;
+    }
+
+    main.container h3.planet-name{
+        font-size: 40px;
     }
 
     main.container .all-planets #tabs{
         margin-top: 50px;
         justify-content: center;
         align-items: center;
+        gap: 16px;
+    }
+
+    main.container .all-planets #tabs .tab{
+        width: 10px;
+        height: 10px;
     }
 
     main.container .tab-data-desc{
@@ -148,33 +175,55 @@ main.container #tab-content .tab-data-desc .planet-details h6.subheading1-planet
     }
 
     main.container .tab-data-desc p.planet-desc{
-        margin-bottom: 48px;
+        font-family: 'Barlow', sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--violet);
+        margin-bottom: 32px;
+        max-width: none;
     }
+    
 }
 
 @media screen and (max-width: 376px) {
     body{
-        background-image: url(../img/destination/background-destination-mobile.jpg);
+        background-image: url(../img/crew/background-crew-mobile.jpg);
     }
 
     main.container{
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     main.container .row{
         gap: 30px;
     }
 
-    main.container .all-planets #tabs{
-        font-size: 14px;;
+    main.container .crew-member:nth-child(1){
+        order: 2;
     }
 
-    main.container .tab-data-img img{
-        width: 80%;
+    main.container .crew-member:nth-child(2){
+        order: 1;
     }
 
+
     main.container .all-planets #tabs{
+        font-size: 14px;
         margin-top: 0px;
+    }
+
+    main.container #tab-content .tab-data.tab-data-img{
+        width: 100%;
+        border-bottom: 1px solid var(--white-hover);
+    }
+
+    main.container #tab-content .tab-data.tab-data-img img{
+        width: 70%;
+        margin-top: 0px;
+    }
+
+    main.container .all-planets #tabs .tab{
+        margin-bottom: 20px;
     }
 
     main.container h6.subheading1-title{
