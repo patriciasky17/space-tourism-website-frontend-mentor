@@ -177,18 +177,34 @@ main.container .tab-data-desc p.crew-desc{
         gap: 30px;
     }
 
+    main.container .crew-member {
+        display: flex;
+        flex-direction: column;
+    }
+
     main.container .crew-member:nth-child(1){
-        order: 2;
+        order: 1 !important;
     }
 
     main.container .crew-member:nth-child(2){
+        order: 2 !important;
+    }
+
+    main.container .all-crews .tab-order:nth-child(1){
+        order: 2;
+        display: flex;
+    }
+
+    main.container .all-crews .tab-order:nth-child(2){
         order: 1;
+        display: flex;
     }
 
 
     main.container .all-crews #tabs{
         font-size: 14px;
         margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     main.container #tab-content .tab-data.tab-data-img{
