@@ -18,7 +18,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style-home.css">
+    <link rel="stylesheet" href="./assets/css/style-technology.css">
 
     <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -50,20 +50,89 @@
 
     <main class="container">
         <div class="row">
-            <div class="col-xl-5 col-lg-7 col-md-12 col-sm-12 left-beginning">
-                <h5 class="title-beginning">So, you want to travel to</h5>
-                <h1 class="title-space">Space</h1>
-                <p class="beginning-description">Let’s face it; if you want to go to space, you might as well genuinely
-                    go to
-                    outer space and not hover kind of on the edge of it. Well sit back, and relax
-                    because we’ll give you a truly out of this world experience!</p>
+            <div class="col-12">
+                <h6 class="subheading1-title"><span>03</span> Space Launch 101</h6>
             </div>
 
-            <div class="col-xl-7 col-lg-5 col-md-12 col-sm-12 right-beginning">
-                <button class="landing-page-button" href="#">Explore</button>
+            <div class="col-lg-7 col-md-7 col-sm-12 all-tech tech-type">
+                <div id="tabs">
+                    <div class="tab" data-tab="1">1</div>
+                    <div class="tab" data-tab="2">2</div>
+                    <div class="tab" data-tab="3">3</div>
+                </div>
+
+                <div id="tab-content">
+                    <div class="tab-data tab-data-desc" data-tab="1">
+                        <p class="beginning-title-tech-name">The Terminology…</p>
+
+                        <h3 class="tech-name">Launch Vehicle</h3>
+
+                        <p class="tech-desc">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to
+                            carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X
+                            carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an
+                            awe-inspiring sight on the launch pad!</p>
+                    </div>
+
+                    <div class="tab-data tab-data-desc" data-tab="2">
+                        <p class="beginning-title-tech-name">The Terminology…</p>
+
+                        <h3 class="tech-name">Spaceport</h3>
+
+                        <p class="tech-desc">A spaceport or cosmodrome is a site for launching (or receiving)
+                            spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous
+                            Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation
+                            for launch.</p>
+                    </div>
+
+                    <div class="tab-data tab-data-desc" data-tab="3">
+                        <p class="beginning-title-tech-name">The Terminology…</p>
+
+                        <h3 class="tech-name">Space Capsule</h3>
+
+                        <p class="tech-desc">A space capsule is an often-crewed spacecraft that uses a blunt-body
+                            reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll
+                            spend your time during the flight. It includes a space gym, cinema, and plenty of other
+                            activities to keep you entertained.</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12 tech-image tech-type">
+                <div class="tab-content" id="myTabContent">
+                    <div id="tab-content">
+                        <div class="tab-data tab-data-img" data-tab="1">
+                            <img src="" alt="Douglas Hurley">
+                        </div>
+                        <div class="tab-data tab-data-img" data-tab="2">
+                            <img src="" alt="Marl Shuttleworth">
+                        </div>
+                        <div class="tab-data tab-data-img" data-tab="3">
+                            <img src="" alt="Victor Glover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </main>
+
+    <script>
+        function changeImage() {
+            const images = document.querySelectorAll(".tab-data-img img");
+            if (window.innerWidth >= 768) {
+                images[0].src = "./assets/img/technology/image-launch-vehicle-portrait.jpg";
+                images[1].src = "./assets/img/technology/image-spaceport-portrait.jpg";
+                images[2].src = "./assets/img/technology/image-space-capsule-portrait.jpg";
+            } else {
+                images[0].src = "./assets/img/technology/image-launch-vehicle-landscape.jpg";
+                images[1].src = "./assets/img/technology/image-spaceport-landscape.jpg";
+                images[2].src = "./assets/img/technology/image-space-capsule-landscape.jpg";
+            }
+        }
+        window.addEventListener("resize", changeImage);
+        changeImage();
+    </script>
 
 
     <!-- Bootstrap -->
